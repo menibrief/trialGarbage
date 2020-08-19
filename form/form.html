@@ -1,0 +1,39 @@
+<html>
+<head> <title> Form </title> 
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head> 
+
+<body>
+<center>
+<h1>  Survey Form  </h1>
+<h2> <font size=3 color=white> How Can we do a typical Survey Form? </h2> </font>
+</center>
+<hr>
+
+<form name="first_form" action="html_form_action.php" method="post">
+
+<font color=white>
+First Name: <input type="text" NAME="name" SIZE="25">
+	<br>
+Last Name:	<input type="text" NAME="name" SIZE="25">
+	<br>
+Gender:		 <select name="gender">
+			 <option selected> Male </option>
+			 <option> Female </option>
+			 </select>
+<br>
+<input type="checkbox" Name="car" size="15">car
+	<br>
+<input type="checkbox" Name="bike" size="15">bike
+<H3>General comments on the course </H3>
+
+<textarea name="suggestions" Rows="5" cols="60"> Write your comments here</textarea>
+<br>
+	<button type="submit" value="Send"> Submit the Survey</button>
+	<br>
+	<button type="reset" value="Clear"> Clear answers</button>
+
+</form>
+
+</body>
+</html>
