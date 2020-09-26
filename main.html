@@ -7,7 +7,7 @@
 <h1> Tirgul 1</h1>
 <CENTER><img SRC="afelix.gif" align="JUSTIFY"></CENTER>
 <HR SIZE=3 WIDTH=450 COLOR="white">
-<h2> Learning Basic HTML</h2>
+<h2 id="demo"></h2>
   <script> 
     function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -21,7 +21,7 @@ async function demo() {
   // Sleep in loop
   for (let i = 0; i < 100; i++) {
       await sleep(2000);
-    console.log(i);
+    document.getElementById("demo").innerHTML = i;
   }
 }
 
