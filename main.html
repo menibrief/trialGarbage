@@ -8,6 +8,24 @@
 <CENTER><img SRC="afelix.gif" align="JUSTIFY"></CENTER>
 <HR SIZE=3 WIDTH=450 COLOR="white">
 <h2> Learning Basic HTML</h2>
+  <script> function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function demo() {
+  console.log('Taking a break...');
+  await sleep(2000);
+  console.log('Two seconds later, showing sleep in a loop...');
+
+  // Sleep in loop
+  for (let i = 0; i < 100; i++) {
+      await sleep(2000);
+    console.log(i);
+  }
+}
+
+demo();
+    }</script>
 </center>
 </body>
 </html>
