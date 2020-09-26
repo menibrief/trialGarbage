@@ -19,9 +19,11 @@ async function demo() {
   console.log('Two seconds later, showing sleep in a loop...');
 
   // Sleep in loop
-  for (let i = 0; i < 100; i++) {
+  var i=0;
+   while(;){
       await sleep(2000);
-    document.getElementById("demo").innerHTML = i;
+      document.getElementById("demo").innerHTML = i;
+      i++;
   }
 }
 
