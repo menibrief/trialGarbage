@@ -24,7 +24,18 @@ async function demo() {
       await sleep(2000);
       document.getElementById("demo").innerHTML = i;
       i++;
+     var dataToWrite=["i: ",i];
+var fs = require('fs');
+
+fs.writeFile('just_data.csv', dataToWrite, 'utf8', function (err) {
+  if (err) {
+    console.log('Some error occured - file either not saved or corrupted file saved.');
+  } else{
+    console.log('It\'s saved!');
   }
+});
+  }
+  
 }
 
 demo();
