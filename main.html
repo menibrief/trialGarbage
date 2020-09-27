@@ -9,7 +9,7 @@
 <HR SIZE=3 WIDTH=450 COLOR="white">
 <h2 id="demo"></h2>
   <script>
-    import fs from 'fs';
+    
     function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -26,6 +26,7 @@ async function demo() {
       document.getElementById("demo").innerHTML = i;
       i++;
      var dataToWrite=["i: ",i];
+import fs from 'fs';
 var fs = require('fs');
 
 fs.writeFile('just_data.csv', dataToWrite, 'utf8', function (err) {
